@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Conoce la historia, misión, visión y fundadores de Buen Sabor Catering."
+    />
+    <title>Buen Sabor Catering | Sobre nosotros</title>
+    <!-- bootstrap 5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- iconos de bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <!-- cabecera -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="index.html"
+          >
+            <img
+              src="img/logo-gorro.svg"
+              alt="Logo de Buen Sabor Catering"
+              width="44"
+              height="44"
+            />
+            <span>Buen Sabor<small>Catering Services</small></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Mostrar menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li>
+                    <a class="dropdown-item" href="servicio-bodas.html"
+                      >Banquetes para bodas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="servicio-corporativo.html"
+                      >Catering corporativo</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="servicio-buffets.html"
+                      >Buffets temáticos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="servicio-cocteleria.html"
+                      >Coctelería y finger food</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="servicios.html"
+                      >Ver todos los servicios</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <header class="container text-center pt-5 pb-4">
+        <p class="etiqueta-seccion mb-1">Nuestra trayectoria</p>
+        <h1 class="titulo-seccion">Sobre nosotros</h1>
+      </header>
+
+      <!-- historia -->
+      <section class="container py-4">
+        <div class="row g-4 align-items-center">
+          <figure class="col-12 col-lg-5 mb-0">
+            <img
+              src="img/cocina-montaje.jpg"
+              class="img-fluid foto-borde"
+              alt="Chef preparando platos en nuestra cocina central"
+            />
+          </figure>
+          <article class="col-12 col-lg-7">
+            <h2>Nuestra historia</h2>
+            <p>
+              Buen Sabor Catering nació en 2012 en Lima, de la mano de dos
+              amigos que compartían una pasión: convertir cada celebración en
+              una experiencia gastronómica memorable.
+            </p>
+            <p>
+              Empezamos atendiendo reuniones familiares desde una pequeña
+              cocina. Con los años, la calidad de nuestros platos y la atención
+              al detalle nos llevaron a servir bodas, lanzamientos y eventos
+              corporativos de más de 500 invitados.
+            </p>
+            <p class="mb-0">
+              Hoy contamos con una cocina central propia, un equipo de más de 40
+              profesionales y una red de productores locales que nos entregan
+              ingredientes frescos cada semana.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- misión y visión -->
+      <section class="container py-5">
+        <div class="row g-4">
+          <article class="col-12 col-md-6">
+            <div class="card h-100 p-4">
+              <div class="card-body">
+                <span class="icono-circulo mb-3"
+                  ><i class="bi bi-bullseye"></i
+                ></span>
+                <h2 class="h3">Nuestra misión</h2>
+                <p class="card-text">
+                  Crear experiencias gastronómicas personalizadas, con
+                  ingredientes frescos y sostenibles, que hagan de cada evento
+                  un momento especial para nuestros clientes y sus invitados.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-6">
+            <div class="card h-100 p-4">
+              <div class="card-body">
+                <span class="icono-circulo mb-3"
+                  ><i class="bi bi-eye-fill"></i
+                ></span>
+                <h2 class="h3">Nuestra visión</h2>
+                <p class="card-text">
+                  Ser la empresa de catering de referencia en el Perú por su
+                  calidad, innovación culinaria y compromiso con los productores
+                  locales y el medio ambiente.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- valores -->
+      <section class="franja-frase py-5">
+        <div class="container text-center">
+          <h2 class="mb-4">Nuestros valores</h2>
+          <div class="row g-4">
+            <article class="col-6 col-md-3">
+              <i class="bi bi-heart-fill texto-dorado display-5"></i>
+              <h3 class="h5 text-white mt-2">Pasión</h3>
+            </article>
+            <article class="col-6 col-md-3">
+              <i class="bi bi-award-fill texto-dorado display-5"></i>
+              <h3 class="h5 text-white mt-2">Calidad</h3>
+            </article>
+            <article class="col-6 col-md-3">
+              <i class="bi bi-clock-fill texto-dorado display-5"></i>
+              <h3 class="h5 text-white mt-2">Puntualidad</h3>
+            </article>
+            <article class="col-6 col-md-3">
+              <i class="bi bi-flower2 texto-dorado display-5"></i>
+              <h3 class="h5 text-white mt-2">Sostenibilidad</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- fundadores -->
+      <section class="container py-5">
+        <header class="text-center mb-5">
+          <p class="etiqueta-seccion mb-1">Las personas detrás del sabor</p>
+          <h2 class="titulo-seccion">Fundadores y liderazgo</h2>
+        </header>
+        <div class="row g-4 justify-content-center">
+          <article class="col-12 col-md-6 col-lg-5">
+            <div class="card h-100 text-center">
+              <img
+                loading="lazy"
+                src="img/chef-fernando.jpg"
+                class="card-img-top foto-fundador pos-fernando"
+                alt="Retrato de Fernando Alcántara"
+              />
+              <div class="card-body">
+                <h3 class="h4 card-title">Fernando Alcántara</h3>
+                <p class="etiqueta-seccion">Chef ejecutivo y cofundador</p>
+                <p class="card-text">
+                  Más de 20 años de experiencia en cocina de autor. Lidera la
+                  creación de cada menú y la selección de productores.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-6 col-lg-5">
+            <div class="card h-100 text-center">
+              <img
+                loading="lazy"
+                src="img/chef-juan.jpg"
+                class="card-img-top foto-fundador pos-juan"
+                alt="Retrato de Juan Ramírez Torres"
+              />
+              <div class="card-body">
+                <h3 class="h4 card-title">Juan Ramírez Torres</h3>
+                <p class="etiqueta-seccion">
+                  Director de operaciones y cofundador
+                </p>
+                <p class="card-text">
+                  Experto en logística de eventos. Coordina el montaje, el
+                  personal y la puntualidad de cada servicio.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <section class="col-12 col-md-4">
+            <h5>Buen Sabor Catering</h5>
+            <p>
+              Alta gastronomía para bodas, eventos corporativos y celebraciones.
+              Sabor, estilo y puntualidad en cada detalle.
+            </p>
+          </section>
+          <section class="col-6 col-md-4">
+            <h5>Navegación</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Sobre nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="servicio-bodas.html">Banquetes para bodas</a></li>
+              <li>
+                <a href="servicio-corporativo.html">Catering corporativo</a>
+              </li>
+              <li><a href="servicio-buffets.html">Buffets temáticos</a></li>
+              <li>
+                <a href="servicio-cocteleria.html">Coctelería y finger food</a>
+              </li>
+              <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+          </section>
+          <section class="col-12 col-md-4">
+            <h5>Contáctanos</h5>
+            <ul class="list-unstyled text-break">
+              <li>
+                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                Miraflores, Lima
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                450
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill texto-dorado"></i>
+                contacto@buensaborcatering.pe
+              </li>
+            </ul>
+            <a
+              class="me-3"
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              class="me-3"
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a
+              class="me-3"
+              href="https://www.tiktok.com"
+              target="_blank"
+              aria-label="TikTok"
+              ><i class="bi bi-tiktok fs-4"></i
+            ></a>
+            <a
+              href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="bi bi-whatsapp fs-4"></i
+            ></a>
+          </section>
+        </div>
+        <hr />
+        <p class="text-center mb-0">
+          © 2026 Buen Sabor Catering Services. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- script JS de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

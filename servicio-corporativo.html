@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Puntualidad, distinción y sabor de alto nivel para tus conferencias, reuniones ejecutivas y lanzamientos."
+    />
+    <title>Buen Sabor Catering | Catering corporativo</title>
+    <!-- bootstrap 5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- iconos de bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <!-- cabecera -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="index.html"
+          >
+            <img
+              src="img/logo-gorro.svg"
+              alt="Logo de Buen Sabor Catering"
+              width="44"
+              height="44"
+            />
+            <span>Buen Sabor<small>Catering Services</small></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Mostrar menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li>
+                    <a class="dropdown-item" href="servicio-bodas.html"
+                      >Banquetes para bodas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item active"
+                      href="servicio-corporativo.html"
+                      >Catering corporativo</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="servicio-buffets.html"
+                      >Buffets temáticos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="servicio-cocteleria.html"
+                      >Coctelería y finger food</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="servicios.html"
+                      >Ver todos los servicios</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- presentación del servicio -->
+      <section class="container py-5">
+        <div class="row g-4 align-items-center">
+          <article class="col-12 col-lg-6">
+            <span class="badge insignia-marca mb-3"
+              >Excelencia empresarial</span
+            >
+            <h1>Catering corporativo y coffee breaks VIP</h1>
+            <p class="lead">
+              Puntualidad, distinción y sabor de alto nivel para tus
+              conferencias, reuniones ejecutivas y lanzamientos.
+            </p>
+            <p>
+              Nos adaptamos al horario y al protocolo de tu empresa: montaje
+              discreto, servicio ágil y menús que mantienen a tu equipo y a tus
+              invitados con energía durante toda la jornada.
+            </p>
+            <a href="contactos.html" class="btn btn-marca btn-lg"
+              ><i class="bi bi-calendar-heart"></i> Solicitar cotización</a
+            >
+          </article>
+          <figure class="col-12 col-lg-6 mb-0">
+            <img
+              src="img/catering-corporativo.jpg"
+              class="img-fluid foto-borde"
+              alt="Auditorio preparado con mesas para un evento corporativo"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- menú -->
+      <section class="container pb-5">
+        <header class="text-center mb-5">
+          <p class="etiqueta-seccion mb-1">Para cada momento del día</p>
+          <h2 class="titulo-seccion">Formatos corporativos</h2>
+        </header>
+        <div class="row g-4">
+          <article class="col-12 col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h3 class="h4">
+                  <i class="bi bi-cup-hot-fill texto-dorado"></i> Coffee break
+                </h3>
+                <ul class="ps-3 mb-0">
+                  <li>Café de especialidad, infusiones y jugos naturales</li>
+                  <li>Mini sándwiches, empanaditas y pastelería fina</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h3 class="h4">
+                  <i class="bi bi-egg-fried texto-dorado"></i> Almuerzo buffet
+                </h3>
+                <ul class="ps-3 mb-0">
+                  <li>Entradas frías y ensaladas de temporada</li>
+                  <li>Dos fondos criollos y guarniciones</li>
+                  <li>Postres y refrescos</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-4">
+            <div class="card h-100 p-3">
+              <div class="card-body">
+                <h3 class="h4">
+                  <i class="bi bi-moon-stars-fill texto-dorado"></i> Cena
+                  ejecutiva
+                </h3>
+                <ul class="ps-3 mb-0">
+                  <li>Plato servido de tres tiempos</li>
+                  <li>Maridaje con vino y agua mineral</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- inclusiones y precio -->
+      <section class="franja-frase py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <article class="col-12 col-lg-7">
+              <h2>Incluye</h2>
+              <ul class="list-unstyled lista-iconos fs-5">
+                <li>
+                  <i class="bi bi-check-circle-fill texto-dorado"></i> Montaje y
+                  desmontaje sin interrupciones
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill texto-dorado"></i> Personal
+                  uniformado y puntual
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill texto-dorado"></i> Menaje,
+                  mantelería y equipos para mantener la temperatura
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill texto-dorado"></i>
+                  Comprobante electrónico para tu empresa
+                </li>
+              </ul>
+            </article>
+            <aside class="col-12 col-lg-5">
+              <div class="card text-center p-4">
+                <div class="card-body">
+                  <p class="etiqueta-seccion mb-0">Precio desde, por persona</p>
+                  <p class="precio mb-0">$18.00</p>
+                  <p class="small">Desde 30 personas · coffee break</p>
+                  <a href="contactos.html" class="btn btn-marca btn-lg w-100"
+                    >Solicitar cotización</a
+                  >
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- video y galería -->
+      <section class="container py-5">
+        <header class="text-center mb-4">
+          <p class="etiqueta-seccion mb-1">Conoce nuestro trabajo</p>
+          <h2 class="titulo-seccion">Así vivimos cada evento</h2>
+        </header>
+        <div class="row g-4 align-items-center galeria">
+          <div class="col-12 col-lg-8">
+            <div class="ratio ratio-16x9">
+              <video
+                controls
+                preload="none"
+                muted
+                loop
+                poster="img/poster-corp.jpg"
+              >
+                <source src="media/servicio-corp.mp4" type="video/mp4" />
+                Tu navegador no soporta video HTML5.
+              </video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row g-3">
+              <figure class="col-6 col-lg-12 mb-0">
+                <img
+                  loading="lazy"
+                  src="img/chefs-cocina.jpg"
+                  alt="Catering corporativo: ejemplo de montaje"
+                />
+              </figure>
+              <figure class="col-6 col-lg-12 mb-0">
+                <img
+                  loading="lazy"
+                  src="img/tabla-finger.jpg"
+                  alt="Catering corporativo: ejemplo de montaje"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- volver -->
+      <section class="container pb-5 text-center">
+        <a href="servicios.html" class="btn btn-marca-borde"
+          ><i class="bi bi-arrow-left"></i> Ver todos los servicios</a
+        >
+      </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <section class="col-12 col-md-4">
+            <h5>Buen Sabor Catering</h5>
+            <p>
+              Alta gastronomía para bodas, eventos corporativos y celebraciones.
+              Sabor, estilo y puntualidad en cada detalle.
+            </p>
+          </section>
+          <section class="col-6 col-md-4">
+            <h5>Navegación</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Sobre nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="servicio-bodas.html">Banquetes para bodas</a></li>
+              <li>
+                <a href="servicio-corporativo.html">Catering corporativo</a>
+              </li>
+              <li><a href="servicio-buffets.html">Buffets temáticos</a></li>
+              <li>
+                <a href="servicio-cocteleria.html">Coctelería y finger food</a>
+              </li>
+              <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+          </section>
+          <section class="col-12 col-md-4">
+            <h5>Contáctanos</h5>
+            <ul class="list-unstyled text-break">
+              <li>
+                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                Miraflores, Lima
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                450
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill texto-dorado"></i>
+                contacto@buensaborcatering.pe
+              </li>
+            </ul>
+            <a
+              class="me-3"
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              class="me-3"
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a
+              class="me-3"
+              href="https://www.tiktok.com"
+              target="_blank"
+              aria-label="TikTok"
+              ><i class="bi bi-tiktok fs-4"></i
+            ></a>
+            <a
+              href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="bi bi-whatsapp fs-4"></i
+            ></a>
+          </section>
+        </div>
+        <hr />
+        <p class="text-center mb-0">
+          © 2026 Buen Sabor Catering Services. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- script JS de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
