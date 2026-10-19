@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -65,7 +68,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -115,11 +118,11 @@
       </nav>
     </header>
 
-    <main>
-      <header class="container text-center pt-5 pb-4">
+    <main id="contenido">
+      <div class="container text-center pt-5 pb-4">
         <p class="etiqueta-seccion mb-1">Propuestas culinarias</p>
         <h1 class="titulo-seccion">Catálogo de servicios</h1>
-      </header>
+      </div>
 
       <section class="container pb-5">
         <div class="row g-4">
@@ -133,7 +136,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h2 class="h5 card-title">
-                  <i class="bi bi-heart-fill texto-dorado"></i> Banquetes para
+                  <i class="bi bi-heart-fill texto-dorado" aria-hidden="true"></i> Banquetes para
                   bodas
                 </h2>
                 <p class="card-text">
@@ -156,7 +159,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h2 class="h5 card-title">
-                  <i class="bi bi-briefcase-fill texto-dorado"></i> Catering
+                  <i class="bi bi-briefcase-fill texto-dorado" aria-hidden="true"></i> Catering
                   corporativo
                 </h2>
                 <p class="card-text">
@@ -181,7 +184,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h2 class="h5 card-title">
-                  <i class="bi bi-egg-fried texto-dorado"></i> Buffets temáticos
+                  <i class="bi bi-egg-fried texto-dorado" aria-hidden="true"></i> Buffets temáticos
                 </h2>
                 <p class="card-text">
                   Estaciones en vivo con cocina criolla gourmet, mediterránea,
@@ -203,7 +206,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h2 class="h5 card-title">
-                  <i class="bi bi-cup-straw texto-dorado"></i> Coctelería y
+                  <i class="bi bi-cup-straw texto-dorado" aria-hidden="true"></i> Coctelería y
                   finger food
                 </h2>
                 <p class="card-text">
@@ -265,44 +268,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>

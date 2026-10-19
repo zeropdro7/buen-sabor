@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -67,7 +70,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -117,10 +120,10 @@
       </nav>
     </header>
 
-    <main>
+    <main id="contenido">
       <!-- carrusel -->
       <section>
-        <div id="carruselInicio" class="carousel slide" data-bs-ride="carousel">
+        <div id="carruselInicio" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -259,7 +262,7 @@
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <span class="icono-circulo mb-3"
-                  ><i class="bi bi-cup-hot-fill"></i
+                  ><i class="bi bi-cup-hot-fill" aria-hidden="true"></i
                 ></span>
                 <h3 class="h4 card-title">Gastronomía personalizada</h3>
                 <p class="card-text">
@@ -274,7 +277,7 @@
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <span class="icono-circulo mb-3"
-                  ><i class="bi bi-flower1"></i
+                  ><i class="bi bi-flower1" aria-hidden="true"></i
                 ></span>
                 <h3 class="h4 card-title">Ingredientes sostenibles</h3>
                 <p class="card-text">
@@ -288,7 +291,7 @@
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <span class="icono-circulo mb-3"
-                  ><i class="bi bi-stars"></i
+                  ><i class="bi bi-stars" aria-hidden="true"></i
                 ></span>
                 <h3 class="h4 card-title">Servicio integral VIP</h3>
                 <p class="card-text">
@@ -378,7 +381,7 @@
       <!-- frase y llamada a la acción -->
       <section class="franja-frase py-5 text-center">
         <div class="container">
-          <i class="bi bi-quote texto-dorado display-4"></i>
+          <i class="bi bi-quote texto-dorado display-4" aria-hidden="true"></i>
           <h2 class="mb-3">Cada evento merece un sabor que se recuerde</h2>
           <p class="lead mb-4">
             Cuéntanos tu idea y te enviamos una propuesta personalizada en 24
@@ -386,9 +389,9 @@
           </p>
           <a
             href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             class="btn boton-whatsapp btn-lg me-2"
-            ><i class="bi bi-whatsapp"></i> Escríbenos por WhatsApp</a
+            ><i class="bi bi-whatsapp" aria-hidden="true"></i> Escríbenos por WhatsApp <span class="visually-hidden">(se abre en otra pestaña)</span></a
           >
           <a href="contactos.html" class="btn btn-marca-borde btn-lg"
             >Solicitar cotización</a
@@ -467,44 +470,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>

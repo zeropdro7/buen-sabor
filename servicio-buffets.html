@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -65,7 +68,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -115,7 +118,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="contenido">
       <!-- presentación del servicio -->
       <section class="container py-5">
         <div class="row g-4 align-items-center">
@@ -134,12 +137,12 @@
               comida también sea parte del espectáculo.
             </p>
             <a href="contactos.html" class="btn btn-marca btn-lg"
-              ><i class="bi bi-calendar-heart"></i> Solicitar cotización</a
+              ><i class="bi bi-calendar-heart" aria-hidden="true"></i> Solicitar cotización</a
             >
           </article>
           <figure class="col-12 col-lg-6 mb-0">
             <img
-              src="img/buffet-tematico.jpg"
+              src="img/buffet-tematico.jpg" width="1264" height="848"
               class="img-fluid foto-borde"
               alt="Bandejas de buffet con comida caliente y flores"
             />
@@ -158,7 +161,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-fire texto-dorado"></i> Criolla gourmet
+                  <i class="bi bi-fire texto-dorado" aria-hidden="true"></i> Criolla gourmet
                 </h3>
                 <ul class="ps-3 mb-0">
                   <li>Ceviche preparado en vivo</li>
@@ -172,7 +175,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-flower1 texto-dorado"></i> Mediterránea
+                  <i class="bi bi-flower1 texto-dorado" aria-hidden="true"></i> Mediterránea
                 </h3>
                 <ul class="ps-3 mb-0">
                   <li>Hummus, falafel y pan pita</li>
@@ -186,7 +189,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-stars texto-dorado"></i> Pastas y sushi bar
+                  <i class="bi bi-stars texto-dorado" aria-hidden="true"></i> Pastas y sushi bar
                 </h3>
                 <ul class="ps-3 mb-0">
                   <li>Pastas al momento con tres salsas</li>
@@ -206,19 +209,19 @@
               <h2>Incluye</h2>
               <ul class="list-unstyled lista-iconos fs-5">
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Chef en
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Chef en
                   cada estación en vivo
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Vajilla,
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Vajilla,
                   chafing dishes y decoración temática
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Mozos
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Mozos
                   para reposición y limpieza
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Opciones
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Opciones
                   veganas y sin gluten
                 </li>
               </ul>
@@ -283,8 +286,8 @@
 
       <!-- volver -->
       <section class="container pb-5 text-center">
-        <a href="servicios.html" class="btn btn-marca-borde"
-          ><i class="bi bi-arrow-left"></i> Ver todos los servicios</a
+        <a href="servicios.html" class="btn btn-verde-borde"
+          ><i class="bi bi-arrow-left" aria-hidden="true"></i> Ver todos los servicios</a
         >
       </section>
     </main>
@@ -321,44 +324,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>

@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -65,7 +68,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -120,11 +123,11 @@
       </nav>
     </header>
 
-    <main>
-      <header class="container text-center pt-5 pb-4">
+    <main id="contenido">
+      <div class="container text-center pt-5 pb-4">
         <p class="etiqueta-seccion mb-1">Hablemos</p>
         <h1 class="titulo-seccion">Contáctanos</h1>
-      </header>
+      </div>
 
       <section class="container pb-5">
         <div class="row g-4">
@@ -132,30 +135,33 @@
           <article class="col-12 col-lg-7">
             <div class="card p-3 p-md-4">
               <h2 class="h3 mb-3">Solicita tu cotización</h2>
-              <form action="#" method="post">
+              <p class="small">Los campos con asterisco (*) son obligatorios.</p>
+              <form action="gracias.html" method="get">
                 <div class="row g-3">
                   <div class="col-12 col-md-6">
                     <label for="nombre" class="form-label"
-                      >Nombre completo</label
+                      >Nombre completo <span aria-hidden="true">*</span></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="nombre"
                       name="nombre"
+                      autocomplete="name"
                       placeholder="Tu nombre"
                       required
                     />
                   </div>
                   <div class="col-12 col-md-6">
                     <label for="correo" class="form-label"
-                      >Correo electrónico</label
+                      >Correo electrónico <span aria-hidden="true">*</span></label
                     >
                     <input
                       type="email"
                       class="form-control"
                       id="correo"
                       name="correo"
+                      autocomplete="email"
                       placeholder="nombre@correo.com"
                       required
                     />
@@ -167,7 +173,8 @@
                       class="form-control"
                       id="telefono"
                       name="telefono"
-                      placeholder="930 563 450"
+                      autocomplete="tel"
+                      placeholder="999 999 999"
                     />
                   </div>
                   <div class="col-12 col-md-6">
@@ -208,7 +215,7 @@
                     />
                   </div>
                   <div class="col-12">
-                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <label for="mensaje" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
                     <textarea
                       class="form-control"
                       id="mensaje"
@@ -243,57 +250,57 @@
               <h3 class="h4 mb-3">Datos de contacto</h3>
               <ul class="list-unstyled mb-4">
                 <li class="mb-2">
-                  <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco
+                  <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco
                   1301, Miraflores, Lima
                 </li>
                 <li class="mb-2">
-                  <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                  <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                   450
                 </li>
                 <li class="mb-2">
-                  <i class="bi bi-envelope-fill texto-dorado"></i>
+                  <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                   contacto@buensaborcatering.pe
                 </li>
                 <li>
-                  <i class="bi bi-clock-fill texto-dorado"></i> Lunes a sábado,
+                  <i class="bi bi-clock-fill texto-dorado" aria-hidden="true"></i> Lunes a sábado,
                   8:00 a. m. – 7:00 p. m.
                 </li>
               </ul>
               <a
                 href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="btn boton-whatsapp w-100 mb-4"
-                ><i class="bi bi-whatsapp"></i> Escríbenos por WhatsApp</a
+                ><i class="bi bi-whatsapp" aria-hidden="true"></i> Escríbenos por WhatsApp <span class="visually-hidden">(se abre en otra pestaña)</span></a
               >
               <h4 class="h5">Síguenos</h4>
               <div class="d-flex gap-3">
                 <a
                   class="icono-red"
                   href="https://www.facebook.com"
-                  target="_blank"
-                  aria-label="Facebook"
-                  ><i class="bi bi-facebook"></i
+                  target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook (se abre en otra pestaña)"
+                  ><i class="bi bi-facebook" aria-hidden="true"></i
                 ></a>
                 <a
                   class="icono-red"
                   href="https://www.instagram.com"
-                  target="_blank"
-                  aria-label="Instagram"
-                  ><i class="bi bi-instagram"></i
+                  target="_blank" rel="noopener noreferrer"
+                  aria-label="Instagram (se abre en otra pestaña)"
+                  ><i class="bi bi-instagram" aria-hidden="true"></i
                 ></a>
                 <a
                   class="icono-red"
                   href="https://www.tiktok.com"
-                  target="_blank"
-                  aria-label="TikTok"
-                  ><i class="bi bi-tiktok"></i
+                  target="_blank" rel="noopener noreferrer"
+                  aria-label="TikTok (se abre en otra pestaña)"
+                  ><i class="bi bi-tiktok" aria-hidden="true"></i
                 ></a>
                 <a
                   class="icono-red"
                   href="https://www.youtube.com"
-                  target="_blank"
-                  aria-label="YouTube"
-                  ><i class="bi bi-youtube"></i
+                  target="_blank" rel="noopener noreferrer"
+                  aria-label="YouTube (se abre en otra pestaña)"
+                  ><i class="bi bi-youtube" aria-hidden="true"></i
                 ></a>
               </div>
             </div>
@@ -308,7 +315,6 @@
           <iframe
             src="https://www.google.com/maps?q=Av.+Larco+1301,+Miraflores,+Lima&amp;output=embed"
             title="Mapa de ubicación de Buen Sabor Catering"
-            style="border: 0"
             allowfullscreen
             loading="lazy"
           ></iframe>
@@ -348,44 +354,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>

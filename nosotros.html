@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -69,7 +72,7 @@
                   class="nav-link active"
                   aria-current="page"
                   href="nosotros.html"
-                  >Sobre nosotros</a
+                  >Nosotros</a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -122,18 +125,18 @@
       </nav>
     </header>
 
-    <main>
-      <header class="container text-center pt-5 pb-4">
+    <main id="contenido">
+      <div class="container text-center pt-5 pb-4">
         <p class="etiqueta-seccion mb-1">Nuestra trayectoria</p>
         <h1 class="titulo-seccion">Sobre nosotros</h1>
-      </header>
+      </div>
 
       <!-- historia -->
       <section class="container py-4">
         <div class="row g-4 align-items-center">
           <figure class="col-12 col-lg-5 mb-0">
             <img
-              src="img/cocina-montaje.jpg"
+              src="img/cocina-montaje.jpg" width="1400" height="594"
               class="img-fluid foto-borde"
               alt="Chef preparando platos en nuestra cocina central"
             />
@@ -167,7 +170,7 @@
             <div class="card h-100 p-4">
               <div class="card-body">
                 <span class="icono-circulo mb-3"
-                  ><i class="bi bi-bullseye"></i
+                  ><i class="bi bi-bullseye" aria-hidden="true"></i
                 ></span>
                 <h2 class="h3">Nuestra misión</h2>
                 <p class="card-text">
@@ -182,7 +185,7 @@
             <div class="card h-100 p-4">
               <div class="card-body">
                 <span class="icono-circulo mb-3"
-                  ><i class="bi bi-eye-fill"></i
+                  ><i class="bi bi-eye-fill" aria-hidden="true"></i
                 ></span>
                 <h2 class="h3">Nuestra visión</h2>
                 <p class="card-text">
@@ -202,19 +205,19 @@
           <h2 class="mb-4">Nuestros valores</h2>
           <div class="row g-4">
             <article class="col-6 col-md-3">
-              <i class="bi bi-heart-fill texto-dorado display-5"></i>
+              <i class="bi bi-heart-fill texto-dorado display-5" aria-hidden="true"></i>
               <h3 class="h5 text-white mt-2">Pasión</h3>
             </article>
             <article class="col-6 col-md-3">
-              <i class="bi bi-award-fill texto-dorado display-5"></i>
+              <i class="bi bi-award-fill texto-dorado display-5" aria-hidden="true"></i>
               <h3 class="h5 text-white mt-2">Calidad</h3>
             </article>
             <article class="col-6 col-md-3">
-              <i class="bi bi-clock-fill texto-dorado display-5"></i>
+              <i class="bi bi-clock-fill texto-dorado display-5" aria-hidden="true"></i>
               <h3 class="h5 text-white mt-2">Puntualidad</h3>
             </article>
             <article class="col-6 col-md-3">
-              <i class="bi bi-flower2 texto-dorado display-5"></i>
+              <i class="bi bi-flower2 texto-dorado display-5" aria-hidden="true"></i>
               <h3 class="h5 text-white mt-2">Sostenibilidad</h3>
             </article>
           </div>
@@ -302,44 +305,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>

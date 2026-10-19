@@ -4,6 +4,10 @@
   --color-marca-2: #c9a227; /* dorado antiguo */
   --color-marca-1-claro: #2a5740;
   --color-marca-2-oscuro: #a8861c;
+  --color-marca-2-hover: #d8b43a; /* hover de botones dorados */
+  --color-marca-2-texto: #7a5f0a; /* dorado legible sobre fondos claros (5.3:1) */
+  --color-whatsapp: #0f7a3b; /* blanco sobre este verde: 5.4:1 */
+  --color-whatsapp-hover: #0b6330;
   --color-fondo: #f4f0e8; /* crema */
   --color-texto: #3b3b36;
 }
@@ -30,16 +34,41 @@ h5,
   background-color: var(--color-marca-1);
 }
 
-.bg-marca-claro {
-  background-color: var(--color-marca-1-claro);
-}
-
 .texto-dorado {
   color: var(--color-marca-2);
 }
 
-.texto-marca {
+/*accesibilidad: enlace para saltar el menu*/
+.saltar-contenido {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2000;
+  padding: 0.6rem 1rem;
+  background-color: var(--color-marca-2);
   color: var(--color-marca-1);
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+/*accesibilidad: foco visible con teclado*/
+a:focus-visible,
+button:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible,
+video:focus-visible {
+  outline: 3px solid var(--color-marca-2);
+  outline-offset: 3px;
+}
+
+footer a:focus-visible,
+.navbar a:focus-visible,
+.navbar-toggler:focus-visible,
+.caja-contacto a:focus-visible,
+.franja-frase a:focus-visible,
+.carousel a:focus-visible,
+.carousel button:focus-visible {
+  outline-color: #fff;
 }
 
 .btn-marca {
@@ -50,11 +79,25 @@ h5,
 }
 
 .btn-marca:hover {
-  background-color: var(--color-marca-2-oscuro);
-  border-color: var(--color-marca-2-oscuro);
+  background-color: var(--color-marca-2-hover);
+  border-color: var(--color-marca-2-hover);
   color: var(--color-marca-1);
 }
 
+/*boton con borde para fondos CLAROS (verde sobre crema: 11:1)*/
+.btn-verde-borde {
+  background-color: transparent;
+  border: 2px solid var(--color-marca-1);
+  color: var(--color-marca-1);
+  font-weight: 600;
+}
+
+.btn-verde-borde:hover {
+  background-color: var(--color-marca-1);
+  color: #fff;
+}
+
+/*boton con borde para fondos OSCUROS (dorado sobre verde: 5.2:1)*/
 .btn-marca-borde {
   background-color: transparent;
   border: 2px solid var(--color-marca-2);
@@ -90,6 +133,13 @@ h5,
   font-weight: 500;
 }
 
+/*mas espacio entre las opciones del menu (solo en escritorio)*/
+@media (min-width: 992px) {
+  .navbar-nav {
+    --bs-navbar-nav-link-padding-x: 1.1rem;
+  }
+}
+
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
   color: var(--color-marca-2);
@@ -97,7 +147,7 @@ h5,
 
 /*titulos de seccion*/
 .etiqueta-seccion {
-  color: var(--color-marca-2-oscuro);
+  color: var(--color-marca-2-texto);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -141,22 +191,38 @@ footer {
   border-top: 3px solid var(--color-marca-2);
 }
 
+/*jerarquia: titulos e iconos en dorado; texto y enlaces en blanco*/
+footer p,
+footer li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 footer a {
-  color: var(--color-marca-2);
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
 }
 
 footer a:hover {
-  color: #fff;
+  color: var(--color-marca-2);
+  text-decoration-color: var(--color-marca-2);
 }
 
 footer h5 {
   color: var(--color-marca-2);
 }
 
+/*enlaces que son solo un icono (redes): sin subrayado*/
+footer a[aria-label] {
+  text-decoration: none;
+}
+
 /*ESTILOS ESPECIFICOS PAGINA: INICIO */
 .carousel-item img {
   height: 75vh;
+  min-height: 460px;
+  max-height: 720px;
   object-fit: cover;
 }
 
@@ -203,7 +269,7 @@ footer h5 {
 }
 
 .foto-fundador {
-  height: 420px;
+  height: clamp(300px, 70vw, 420px);
   object-fit: cover;
   object-position: top;
 }
@@ -247,15 +313,21 @@ footer h5 {
 }
 
 .boton-whatsapp {
-  background-color: #25d366;
-  border-color: #25d366;
+  background-color: var(--color-whatsapp);
+  border-color: var(--color-whatsapp);
   color: #fff;
   font-weight: 600;
 }
 
 .boton-whatsapp:hover {
-  background-color: #1ebe5a;
+  background-color: var(--color-whatsapp-hover);
+  border-color: var(--color-whatsapp-hover);
   color: #fff;
+}
+
+/*mapa y videos incrustados*/
+.ratio iframe {
+  border: 0;
 }
 
 .pos-fernando {

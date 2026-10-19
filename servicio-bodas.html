@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -65,7 +68,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -115,7 +118,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="contenido">
       <!-- presentación del servicio -->
       <section class="container py-5">
         <div class="row g-4 align-items-center">
@@ -132,12 +135,12 @@
               profesional durante todo el evento.
             </p>
             <a href="contactos.html" class="btn btn-marca btn-lg"
-              ><i class="bi bi-calendar-heart"></i> Solicitar fecha</a
+              ><i class="bi bi-calendar-heart" aria-hidden="true"></i> Solicitar fecha</a
             >
           </article>
           <figure class="col-12 col-lg-6 mb-0">
             <img
-              src="img/banquete-boda.jpg"
+              src="img/banquete-boda.jpg" width="1264" height="848"
               class="img-fluid foto-borde"
               alt="Mesa larga de banquete con flores y copas"
             />
@@ -156,7 +159,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-1-circle-fill texto-dorado"></i> Entrada
+                  <i class="bi bi-1-circle-fill texto-dorado" aria-hidden="true"></i> Entrada
                   gourmet
                 </h3>
                 <ul class="ps-3 mb-0">
@@ -170,7 +173,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-2-circle-fill texto-dorado"></i> Plato
+                  <i class="bi bi-2-circle-fill texto-dorado" aria-hidden="true"></i> Plato
                   principal
                 </h3>
                 <ul class="ps-3 mb-0">
@@ -187,7 +190,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-3-circle-fill texto-dorado"></i> Postre y
+                  <i class="bi bi-3-circle-fill texto-dorado" aria-hidden="true"></i> Postre y
                   brindis
                 </h3>
                 <ul class="ps-3 mb-0">
@@ -208,19 +211,19 @@
               <h2>Inclusiones VIP</h2>
               <ul class="list-unstyled lista-iconos fs-5">
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i>
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i>
                   Degustación gratuita del menú para 4 personas
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Vajilla
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Vajilla
                   de porcelana, cristalería fina y cubertería
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Maître y
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Maître y
                   mozos uniformados (1 mozo por cada 10 invitados)
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Barra de
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Barra de
                   gaseosas y agua mineral durante 6 horas
                 </li>
               </ul>
@@ -285,8 +288,8 @@
 
       <!-- volver -->
       <section class="container pb-5 text-center">
-        <a href="servicios.html" class="btn btn-marca-borde"
-          ><i class="bi bi-arrow-left"></i> Ver todos los servicios</a
+        <a href="servicios.html" class="btn btn-verde-borde"
+          ><i class="bi bi-arrow-left" aria-hidden="true"></i> Ver todos los servicios</a
         >
       </section>
     </main>
@@ -323,44 +326,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>

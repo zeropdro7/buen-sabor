@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <a class="saltar-contenido visually-hidden-focusable" href="#contenido"
+      >Saltar al contenido</a
+    >
     <!-- cabecera -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-marca fixed-top">
@@ -65,7 +68,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -117,7 +120,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="contenido">
       <!-- presentación del servicio -->
       <section class="container py-5">
         <div class="row g-4 align-items-center">
@@ -136,12 +139,12 @@
               invitados con energía durante toda la jornada.
             </p>
             <a href="contactos.html" class="btn btn-marca btn-lg"
-              ><i class="bi bi-calendar-heart"></i> Solicitar cotización</a
+              ><i class="bi bi-calendar-heart" aria-hidden="true"></i> Solicitar cotización</a
             >
           </article>
           <figure class="col-12 col-lg-6 mb-0">
             <img
-              src="img/catering-corporativo.jpg"
+              src="img/catering-corporativo.jpg" width="1264" height="848"
               class="img-fluid foto-borde"
               alt="Auditorio preparado con mesas para un evento corporativo"
             />
@@ -160,7 +163,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-cup-hot-fill texto-dorado"></i> Coffee break
+                  <i class="bi bi-cup-hot-fill texto-dorado" aria-hidden="true"></i> Coffee break
                 </h3>
                 <ul class="ps-3 mb-0">
                   <li>Café de especialidad, infusiones y jugos naturales</li>
@@ -173,7 +176,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-egg-fried texto-dorado"></i> Almuerzo buffet
+                  <i class="bi bi-egg-fried texto-dorado" aria-hidden="true"></i> Almuerzo buffet
                 </h3>
                 <ul class="ps-3 mb-0">
                   <li>Entradas frías y ensaladas de temporada</li>
@@ -187,7 +190,7 @@
             <div class="card h-100 p-3">
               <div class="card-body">
                 <h3 class="h4">
-                  <i class="bi bi-moon-stars-fill texto-dorado"></i> Cena
+                  <i class="bi bi-moon-stars-fill texto-dorado" aria-hidden="true"></i> Cena
                   ejecutiva
                 </h3>
                 <ul class="ps-3 mb-0">
@@ -208,19 +211,19 @@
               <h2>Incluye</h2>
               <ul class="list-unstyled lista-iconos fs-5">
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Montaje y
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Montaje y
                   desmontaje sin interrupciones
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Personal
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Personal
                   uniformado y puntual
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i> Menaje,
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i> Menaje,
                   mantelería y equipos para mantener la temperatura
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill texto-dorado"></i>
+                  <i class="bi bi-check-circle-fill texto-dorado" aria-hidden="true"></i>
                   Comprobante electrónico para tu empresa
                 </li>
               </ul>
@@ -285,8 +288,8 @@
 
       <!-- volver -->
       <section class="container pb-5 text-center">
-        <a href="servicios.html" class="btn btn-marca-borde"
-          ><i class="bi bi-arrow-left"></i> Ver todos los servicios</a
+        <a href="servicios.html" class="btn btn-verde-borde"
+          ><i class="bi bi-arrow-left" aria-hidden="true"></i> Ver todos los servicios</a
         >
       </section>
     </main>
@@ -323,44 +326,44 @@
             <h5>Contáctanos</h5>
             <ul class="list-unstyled text-break">
               <li>
-                <i class="bi bi-geo-alt-fill texto-dorado"></i> Av. Larco 1301,
+                <i class="bi bi-geo-alt-fill texto-dorado" aria-hidden="true"></i> Av. Larco 1301,
                 Miraflores, Lima
               </li>
               <li>
-                <i class="bi bi-telephone-fill texto-dorado"></i> +51 930 563
+                <i class="bi bi-telephone-fill texto-dorado" aria-hidden="true"></i> +51 930 563
                 450
               </li>
               <li>
-                <i class="bi bi-envelope-fill texto-dorado"></i>
+                <i class="bi bi-envelope-fill texto-dorado" aria-hidden="true"></i>
                 contacto@buensaborcatering.pe
               </li>
             </ul>
             <a
               class="me-3"
               href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (se abre en otra pestaña)"
+              ><i class="bi bi-facebook fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (se abre en otra pestaña)"
+              ><i class="bi bi-instagram fs-4" aria-hidden="true"></i
             ></a>
             <a
               class="me-3"
               href="https://www.tiktok.com"
-              target="_blank"
-              aria-label="TikTok"
-              ><i class="bi bi-tiktok fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (se abre en otra pestaña)"
+              ><i class="bi bi-tiktok fs-4" aria-hidden="true"></i
             ></a>
             <a
               href="https://wa.me/51930563450?text=Hola%20Buen%20Sabor%20Catering%2C%20quisiera%20cotizar%20un%20evento"
-              target="_blank"
-              aria-label="WhatsApp"
-              ><i class="bi bi-whatsapp fs-4"></i
+              target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp (se abre en otra pestaña)"
+              ><i class="bi bi-whatsapp fs-4" aria-hidden="true"></i
             ></a>
           </section>
         </div>
