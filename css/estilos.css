@@ -1,15 +1,42 @@
 /*ESTILOS GENERALES */
 :root {
+  /* el navegador elige claro u oscuro segun el sistema del usuario */
+  color-scheme: light dark;
+
+  /* colores fijos de marca (iguales en claro y oscuro) */
   --color-marca-1: #1b3a2a; /* verde bosque */
   --color-marca-2: #c9a227; /* dorado antiguo */
   --color-marca-1-claro: #2a5740;
   --color-marca-2-oscuro: #a8861c;
   --color-marca-2-hover: #d8b43a; /* hover de botones dorados */
-  --color-marca-2-texto: #7a5f0a; /* dorado legible sobre fondos claros (5.3:1) */
   --color-whatsapp: #0f7a3b; /* blanco sobre este verde: 5.4:1 */
   --color-whatsapp-hover: #0b6330;
-  --color-fondo: #f4f0e8; /* crema */
-  --color-texto: #3b3b36;
+
+  /* colores adaptativos: light-dark(claro, oscuro) */
+  --color-fondo: light-dark(#f4f0e8, #0e1913); /* crema / verde muy oscuro */
+  --color-superficie: light-dark(#fcfaf5, #16271e); /* tarjetas y menus */
+  --color-texto: light-dark(#3b3b36, #e6e2d6);
+  --color-titulo: light-dark(#1b3a2a, #f1ead6);
+  --color-etiqueta: light-dark(#7a5f0a, #d8b43a); /* dorado legible: 5.3:1 / 9:1 */
+  --color-borde: light-dark(#dee2e6, #2c4033);
+  --color-borde-campo: light-dark(#857e6a, #6e8b78); /* borde de campos: >= 3:1 */
+  --color-campo: light-dark(#ffffff, #0e1913);
+  --color-sombra: light-dark(rgba(27, 58, 42, 0.12), rgba(0, 0, 0, 0.5));
+  --color-foco: light-dark(#1b3a2a, #c9a227); /* contorno de foco: >= 3:1 */
+
+  /* bootstrap lee estas variables: asi sus componentes usan nuestra paleta */
+  --bs-body-bg: var(--color-fondo);
+  --bs-body-color: var(--color-texto);
+  --bs-heading-color: var(--color-titulo);
+  --bs-emphasis-color: var(--color-titulo);
+  --bs-secondary-color: light-dark(rgba(59, 59, 54, 0.75), rgba(230, 226, 214, 0.72));
+  --bs-secondary-bg: light-dark(#ece7da, #1e342a);
+  --bs-tertiary-bg: light-dark(#f0ebdf, #1a2d23);
+  --bs-border-color: var(--color-borde);
+  --bs-border-color-translucent: light-dark(rgba(27, 58, 42, 0.18), rgba(255, 255, 255, 0.14));
+  --bs-success-bg-subtle: light-dark(#dcebdf, #123222);
+  --bs-success-border-subtle: light-dark(#a9cdb4, #25583b);
+  --bs-success-text-emphasis: light-dark(#0f3d22, #9bd6b2);
 }
 
 body {
@@ -26,7 +53,7 @@ h4,
 h5,
 .navbar-brand {
   font-family: "Playfair Display", serif;
-  color: var(--color-marca-1);
+  color: var(--color-titulo);
 }
 
 /*colores de marca*/
@@ -51,16 +78,15 @@ h5,
   border-radius: 6px;
 }
 
-/*accesibilidad: foco visible con teclado*/
+/*accesibilidad: foco visible con teclado (verde en claro, dorado en oscuro)*/
 a:focus-visible,
 button:focus-visible,
-.form-control:focus-visible,
-.form-select:focus-visible,
 video:focus-visible {
-  outline: 3px solid var(--color-marca-2);
+  outline: 3px solid var(--color-foco);
   outline-offset: 3px;
 }
 
+/*sobre fondos verdes el foco es blanco*/
 footer a:focus-visible,
 .navbar a:focus-visible,
 .navbar-toggler:focus-visible,
@@ -84,20 +110,21 @@ footer a:focus-visible,
   color: var(--color-marca-1);
 }
 
-/*boton con borde para fondos CLAROS (verde sobre crema: 11:1)*/
+/*boton con borde para fondos CLAROS u oscuros de la pagina (verde en claro, crema en oscuro)*/
 .btn-verde-borde {
   background-color: transparent;
-  border: 2px solid var(--color-marca-1);
-  color: var(--color-marca-1);
+  border: 2px solid var(--color-titulo);
+  color: var(--color-titulo);
   font-weight: 600;
 }
 
 .btn-verde-borde:hover {
-  background-color: var(--color-marca-1);
-  color: #fff;
+  background-color: var(--color-titulo);
+  border-color: var(--color-titulo);
+  color: light-dark(#fff, var(--color-marca-1));
 }
 
-/*boton con borde para fondos OSCUROS (dorado sobre verde: 5.2:1)*/
+/*boton con borde para bandas VERDES (dorado sobre verde: 5.2:1)*/
 .btn-marca-borde {
   background-color: transparent;
   border: 2px solid var(--color-marca-2);
@@ -133,6 +160,11 @@ footer a:focus-visible,
   font-weight: 500;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--color-marca-2);
+}
+
 /*mas espacio entre las opciones del menu (solo en escritorio)*/
 @media (min-width: 992px) {
   .navbar-nav {
@@ -140,14 +172,23 @@ footer a:focus-visible,
   }
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: var(--color-marca-2);
+/*menu desplegable de bootstrap con nuestra paleta*/
+.dropdown-menu {
+  --bs-dropdown-bg: var(--color-superficie);
+  --bs-dropdown-color: var(--color-texto);
+  --bs-dropdown-link-color: var(--color-texto);
+  --bs-dropdown-link-hover-color: var(--color-titulo);
+  --bs-dropdown-link-hover-bg: rgba(201, 162, 39, 0.2);
+  --bs-dropdown-link-active-color: var(--color-marca-1);
+  --bs-dropdown-link-active-bg: var(--color-marca-2);
+  --bs-dropdown-border-color: var(--color-borde);
+  --bs-dropdown-divider-bg: var(--color-borde);
+  border-top: 3px solid var(--color-marca-2);
 }
 
 /*titulos de seccion*/
 .etiqueta-seccion {
-  color: var(--color-marca-2-texto);
+  color: var(--color-etiqueta);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -165,10 +206,12 @@ footer a:focus-visible,
 
 /*tarjetas*/
 .card {
-  background-color: #fcfaf5;
+  --bs-card-bg: var(--color-superficie);
+  --bs-card-color: var(--color-texto);
+  background-color: var(--color-superficie);
   border: 0;
   border-bottom: 4px solid var(--color-marca-2);
-  box-shadow: 0 6px 18px rgba(27, 58, 42, 0.12);
+  box-shadow: 0 6px 18px var(--color-sombra);
 }
 
 .icono-circulo {
@@ -184,7 +227,39 @@ footer a:focus-visible,
   font-size: 1.8rem;
 }
 
-/*pie de pagina*/
+/*formularios de bootstrap con nuestra paleta*/
+.form-control,
+.form-select {
+  background-color: var(--color-campo);
+  color: var(--color-texto);
+  border: 1px solid var(--color-borde-campo);
+}
+
+.form-control::placeholder {
+  color: light-dark(#6b6b63, #9aa79f);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--color-campo);
+  color: var(--color-texto);
+  border-color: var(--color-foco);
+  box-shadow: 0 0 0 0.25rem light-dark(rgba(27, 58, 42, 0.25), rgba(201, 162, 39, 0.4));
+}
+
+/*la flecha del select es una imagen: en oscuro se cambia por una clara*/
+@media (prefers-color-scheme: dark) {
+  .form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e6e2d6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  }
+}
+
+/*alertas de bootstrap: borde dorado a la izquierda*/
+.alert {
+  border-left: 5px solid var(--color-marca-2);
+}
+
+/*pie de pagina (siempre verde)*/
 footer {
   background-color: var(--color-marca-1);
   color: #fff;
@@ -265,13 +340,27 @@ footer a[aria-label] {
 .foto-borde {
   border: 3px solid var(--color-marca-2);
   border-radius: 10px;
-  box-shadow: 0 8px 22px rgba(27, 58, 42, 0.2);
+  box-shadow: 0 8px 22px var(--color-sombra);
 }
 
 .foto-fundador {
   height: clamp(300px, 70vw, 420px);
   object-fit: cover;
   object-position: top;
+}
+
+/*encuadre de cada foto: object-position mueve la ventana de recorte
+  (0% = se ve la parte de arriba, 100% = la de abajo)*/
+.pos-fernando {
+  object-position: 50% 4%;
+}
+
+.pos-juan {
+  object-position: 50% 38%;
+}
+
+.pos-pedro {
+  object-position: 50% 40%;
 }
 
 /*ESTILOS ESPECIFICOS PAGINA: SERVICIOS */
@@ -284,7 +373,7 @@ footer a[aria-label] {
 .precio {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
-  color: var(--color-marca-1);
+  color: var(--color-titulo);
 }
 
 .lista-iconos li {
@@ -328,12 +417,4 @@ footer a[aria-label] {
 /*mapa y videos incrustados*/
 .ratio iframe {
   border: 0;
-}
-
-.pos-fernando {
-  object-position: 50% 30%;
-}
-
-.pos-juan {
-  object-position: 50% 28%;
 }
